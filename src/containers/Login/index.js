@@ -1,27 +1,39 @@
 import './index.css'
-import { useState } from 'react'
+import { Form, Button, Input, Dialog} from 'antd-mobile';
+
 
 const Login = () => {
-  //把setName传过来的参数值传给变量name
-  const [name, setName] = useState();
-  const [pwd, setPwd] = useState();
+  const initialValues={
+    username: 'admin',
+    password: 12345
+  }
 
-  console.log(name)
-  const clickHandler = () =>{
-    alert('login success' + name + ',' + pwd);
-    
+  const [form] = Form.useForm()
+  const onSubmit = () => {
+    const values = form.getFieldsValue()
+    Dialog.alert({
+      content: <pre>{JSON.stringify(values, null, 2)}</pre>,
+    })
   }
-  const onChangeNameHandler = (e) =>{
-    setName(e.target.value);
-  }
-  const onChangePwHandler = (e) =>{
-    setPwd(e.target.value);
-  }
+
   return (
-    <div className="login">
-      <div>username: <input onChange={onChangeNameHandler}/></div>
-      <div>password: <input type="password" onChange={onChangePwHandler}/></div>
-      <div><button onClick={clickHandler}>login</button></div>
+  <div className="login">
+    <Form 
+      form={form} 
+      layout='horizontal' mode='card' 
+      initialValues={initialValues}
+      footer={
+          <Button block color='primary' onClick={onSubmit} size='large'>
+            提交
+          </Button>
+        }>
+        <Form.Item label='用户名' name='username'>
+          <Input placeholder='请输入用户名' clearable/>
+        </Form.Item>
+        <Form.Item label='密码' name='password'>
+          <Input placeholder='请输入密码' clearable type='password'/>
+        </Form.Item>
+    </Form>
     </div>
   );
 }
