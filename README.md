@@ -24,14 +24,17 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#后端服务
-json-server
+#调试使用的是json-server
+React五步法：
+1、将设计好的UI划分为组件层级
+2、用React创建一个静态版本
 
-React五步法
-第一步：将设计好的UI划分组件层级
-第二步：用React创建一个静态版本
 
-#style技术栈选择：
+#style技术选择：
 css 无法编写嵌套
-scss 写简单的嵌套
-css module 不用关心命名空间，不会出现会被覆盖的样式
+scss可以写简单的嵌套
+css modules不用关系命名空间，不会出现会被覆盖的样式
+
+#工程化的配置信息
+craco.config.js：配置webpack文件快捷方式
+jsconfig.json:给vscode使用的js相关配置文件

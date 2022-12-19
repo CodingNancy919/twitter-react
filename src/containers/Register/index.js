@@ -1,17 +1,14 @@
 import { Form, Button, Input, Dialog} from 'antd-mobile';
-
-import Header from '../../components/Header';
-import DatePickerInput from '../../components/DatePickerInput';
+import Header from '@components/Header';
+import DatePickerInput from '@components/DatePickerInput';
 import style from'./index.module.css'
+import { useState } from 'react';
 
 
 /*
 Register Page
 */
 const Register = () => {
-
-
-
 
    return (<div>
       <Header/>
