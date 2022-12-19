@@ -14,7 +14,16 @@
    margin:0 30px;
 }
 
-
+.formContainer{
+   :global(.adm-list-body){
+      background: none;
+      border: none;
+   }
+   :global(.adm-list-item-content){
+      border: none;
+   }
+   
+}
 
 
 .changeTypeButton{

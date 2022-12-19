@@ -28,7 +28,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 React五步法：
 1、将设计好的UI划分为组件层级
 2、用React创建一个静态版本
-
+3、确定UI state的最小（完整）表示
 
 #style技术选择：
 css 无法编写嵌套
