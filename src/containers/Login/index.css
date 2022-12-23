@@ -1,8 +1,6 @@
 .login {
-   text-align: center;
-   background-color: #f5f7fa;
+  text-align: center;
 }
-
-.header{
-   background-color:red
+.login .header {
+  background-color: red;
 }

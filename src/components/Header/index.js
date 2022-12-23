@@ -1,11 +1,20 @@
-import style from './index.module.css'
-import {CloseOutline} from 'antd-mobile-icons'
-import logo from '../../assets/twitter.svg'
+import { CloseOutline } from 'antd-mobile-icons';
+import PropTypes from 'prop-types';
+import logo from '../../assets/twitter-logo.svg';
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default () =>(
-   <div className={style.header}>
-         <CloseOutline className={style.closeIcon}/>
-         <img className={style.twitterLogo} src={logo} alt="twitter-logo"/>
-      </div>
-)
+import style from './index.module.scss';
+
+const Header = ({
+  onClickClose,
+}) => (
+  <div className={style.header}>
+    <CloseOutline className={style.closeIcon} onClick={onClickClose} />
+    <img src={logo} alt="twitter-logo" className={style.twitterLog} />
+  </div>
+);
+
+Header.propTypes = {
+  onClickClose: PropTypes.func.isRequired,
+};
+
+export default Header;

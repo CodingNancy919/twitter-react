@@ -1,14 +1,53 @@
-import datepicker from '../../assets/datepicker-icon.svg'
+import { useState } from 'react';
+import { DatePicker } from 'antd-mobile';
+import moment from 'moment';
+import PropTypes from 'prop-types';
+import datepickerIcon from '../../assets/datepicker-icon.svg';
+import style from './index.module.scss';
 
-import style from './index.module.css'
+/**
+ * 出生日期选择器
+ */
+const DatePickerInput = ({
+  value,
+  onChange,
+}) => {
+  const [visible, setVisible] = useState(false);
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default () => (
-   <div className={style.birthdayInput}>
-   <div className={style.birthdayTitleItem} >出生日期</div>
-   <div>
-      <span className={style.birthdayPlaceHolder}>年/月/日</span>
-      <img className={style.datepickerIcon} src={datepicker} alt="datepicker"/>
-   </div>
-</div>
-);
+  const onClickDatePicker = () => {
+    setVisible(true);
+  };
+  return (
+    <>
+      <DatePicker
+        title="时间选择"
+        visible={visible}
+        onClose={() => {
+          setVisible(false);
+        }}
+        onConfirm={(val) => {
+          onChange(moment(val).format('YYYYMMDD'));
+        }}
+      />
+      <div className={style.birthdayInput} onClick={onClickDatePicker}>
+        <div className={style.birthdayTitleItem}>出生日期</div>
+        <div>
+          <span className={style.birthdayPlaceholder}>{value ? moment(value).format('YYYY年/MM月/DD日') : '年/月/日'}</span>
+          <img className={style.datepickerIcon} src={datepickerIcon} alt="datepickerIcon" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+DatePickerInput.propTypes = {
+  value: PropTypes.string,
+  onChange: PropTypes.func,
+};
+
+DatePickerInput.defaultProps = {
+  value: '',
+  onChange: () => {},
+};
+
+export default DatePickerInput;

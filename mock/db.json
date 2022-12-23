@@ -1,16 +1,158 @@
 {
-   "user":[
-      {
-         "username": "admin1",
-         "password": "123456",
-         "age": 22,
-         "address": "Shanghai"
-      },
-      {
-         "username": "admin2",
-         "password": "123456",
-         "age": 22,
-         "address": "Shanghai"
-      }
-   ]
+  "user": [
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 1
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 2
+    },
+    {
+      "password": "1",
+      "username": "11",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 3
+    },
+    {
+      "password": "1",
+      "username": "11",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 4
+    },
+    {
+      "password": "1",
+      "username": "11",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 5
+    },
+    {
+      "password": "1",
+      "username": "11",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 6
+    },
+    {
+      "password": "1",
+      "username": "11",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 7
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 8
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 9
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 10
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 11
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 12
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 13
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 14
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 15
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 16
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 17
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 18
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 19
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 20
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 21
+    },
+    {
+      "password": "1",
+      "username": "111",
+      "tel": "18611111111",
+      "birthday": "20220203",
+      "id": 22
+    }
+  ]
 }
